@@ -47,8 +47,9 @@ import java.util.Scanner;
             }
             if (Main.a1 >= 11 || Main.b1 >= 11) {
                 throw new Exception("Введите числа не больше 10");
+            } else if (Main.a1 <= 0 || Main.b1 <= 0){
+                throw new Exception("Введите числа больше нуля");
             } else if (l1) {
-
                 System.out.println(calculator.calculator());
             } else {
                 String roman_numeral_output = NumberConvertManager.transform_number_to_roman_numeral(calculator.calculator());
